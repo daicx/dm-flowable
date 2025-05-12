@@ -1,0 +1,16 @@
+
+spring:
+  datasource:
+    url: jdbc:dm://10.15.1.18:5236?compatibleMode=oracle
+    username: SYSDBA
+    password: SYSDBA
+    driver-class-name: dm.jdbc.driver.DmDriver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+
+flowable:
+  #关闭定时任务JOB
+  async-executor-activate: true
+  database-schema-update: true
+server:
+  port: 8081
